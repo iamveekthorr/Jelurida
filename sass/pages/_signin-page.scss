@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fefefe;
+  padding: 3rem 3rem;
+
+  &__item {
+    width: 100vw;
+    padding: 2rem;
+
+    &--1 {
+      background-color: #e3edff;
+    }
+    &--2 {
+      background-color: #fefefe;
+    }
+  }
+}
+
+.logo {
+  color: #005eff;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    text-transform: capitalize;
+    color: #005eff;
+  }
+
+  &__sub-heading--bold {
+    font-weight: bolder;
+    color: #005eff;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  .email-address,
+  .password {
+    display: flex;
+    flex-direction: column;
+    color: #005eff;
+    font-weight: normal;
+  }
+
+  input {
+    border: 2px solid #808080;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: lighter;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
