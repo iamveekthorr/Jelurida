@@ -4,7 +4,7 @@
   "description": "front-end project for emeka ",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass ../SASS/main.scss ./main.style.css -w",
+    "watch:sass": "node-sass ./SASS/main.scss ./main.style.css -w",
     "compile:sass": "node-sass ./frontend/SASS/main.scss ./main.style.css",
     "concat:css": "concat -o ./main.style.css ./main.style.css ./main.style.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./starter/css/style.concat.css -o ./starter/css/style.prefix.css",

@@ -35,13 +35,17 @@ input {
     background-color: #005eff;
     color: #fff; }
 
+.container {
+  width: 100%;
+  padding: 3rem 3rem; }
+
 .main {
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
   background-color: #fefefe;
-  padding: 3rem 3rem; }
+  width: 80vw;
+  margin: 0 auto; }
   .main__item {
     width: 100vw;
     padding: 2rem; }
