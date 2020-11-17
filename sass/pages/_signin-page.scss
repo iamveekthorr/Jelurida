@@ -15,6 +15,7 @@
     }
     &--2 {
       background-color: #fefefe;
+      align-self: center;
     }
   }
 }
@@ -26,7 +27,12 @@
 .input-section {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
 
+  &__sub-heading {
+    text-transform: capitalize;
+    font-weight: normal;
+  }
   &__header {
     text-transform: capitalize;
     color: #005eff;
@@ -42,15 +48,43 @@
   display: flex;
   flex-direction: column;
 
+  &__options--remember-me {
+    margin-right: auto;
+    label {
+      font-size: 1rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__options--forgot-password {
+    text-transform: capitalize;
+    color: #005eff;
+  }
+
+  &__options {
+    margin-bottom: 1rem;
+  }
+  &__options,
+  &__options--remember-me {
+    display: flex;
+    align-items: center;
+  }
+
   .email-address,
   .password {
     display: flex;
     flex-direction: column;
     color: #005eff;
     font-weight: normal;
+    margin-bottom: 1.5rem;
+
+    label {
+      margin-bottom: 1rem;
+    }
   }
 
   input {
+    width: 30rem;
     border: 2px solid #808080;
     padding: 0.7rem 1rem;
     border-radius: 5px;

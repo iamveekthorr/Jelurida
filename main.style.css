@@ -22,6 +22,19 @@ a {
 input {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  border-radius: 3px;
+  letter-spacing: 0.1rem; }
+  .btn--blue {
+    background-color: #005eff;
+    color: #fff; }
+
 .main {
   display: flex;
   justify-content: center;
@@ -35,14 +48,19 @@ input {
     .main__item--1 {
       background-color: #e3edff; }
     .main__item--2 {
-      background-color: #fefefe; }
+      background-color: #fefefe;
+      align-self: center; }
 
 .logo {
   color: #005eff; }
 
 .input-section {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 3rem; }
+  .input-section__sub-heading {
+    text-transform: capitalize;
+    font-weight: normal; }
   .input-section__header {
     text-transform: capitalize;
     color: #005eff; }
@@ -53,13 +71,31 @@ input {
 .form-group {
   display: flex;
   flex-direction: column; }
+  .form-group__options--remember-me {
+    margin-right: auto; }
+    .form-group__options--remember-me label {
+      font-size: 1rem;
+      margin-left: 0.5rem; }
+  .form-group__options--forgot-password {
+    text-transform: capitalize;
+    color: #005eff; }
+  .form-group__options {
+    margin-bottom: 1rem; }
+  .form-group__options, .form-group__options--remember-me {
+    display: flex;
+    align-items: center; }
   .form-group .email-address,
   .form-group .password {
     display: flex;
     flex-direction: column;
     color: #005eff;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 1.5rem; }
+    .form-group .email-address label,
+    .form-group .password label {
+      margin-bottom: 1rem; }
   .form-group input {
+    width: 30rem;
     border: 2px solid #808080;
     padding: 0.7rem 1rem;
     border-radius: 5px;
