@@ -1,3 +1,17 @@
+<template>
+  <user-login></user-login>
+</template>
+
+<script>
+import UserLogin from '@/pages/UserLogin.vue';
+export default {
+  components: {
+    UserLogin,
+  },
+};
+</script>
+
+<style lang="scss">
 *,
 *:before,
 *:after {
@@ -18,6 +32,10 @@ body {
   line-height: 1.5;
 }
 
+img {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -26,3 +44,4 @@ a {
 input {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+</style>

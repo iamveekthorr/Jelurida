@@ -1,3 +1,10 @@
+<template>
+  <button>
+    <slot></slot>
+  </button>
+</template>
+
+<style lang="scss" scoped>
 .btn {
   display: inline-flex;
   align-items: center;
@@ -7,8 +14,12 @@
   font-size: 1rem;
   border-radius: 3px;
   letter-spacing: 0.1rem;
+  outline: none;
+  cursor: pointer;
   &--blue {
     background-color: #005eff;
     color: #fff;
   }
 }
+
+</style>
