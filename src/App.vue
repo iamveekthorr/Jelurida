@@ -1,17 +1,17 @@
 <template>
   <!-- <user-login></user-login> -->
-  <the-header></the-header>
+  <!-- <the-header></the-header> -->
     <router-view></router-view>
 </template>
 
 <script>
 // import UserLogin from '@/pages/UserLogin.vue';
-import TheHeader from '@/components/nav/TheHeader.vue';
+//import TheHeader from '@/components/nav/TheHeader.vue';
 // import HomePage from './pages/HomePage.vue';
 export default {
   components: {
     // UserLogin,
-    TheHeader,
+  // TheHeader,
     // HomePage,
   },
 };

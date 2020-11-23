@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "firebase": "^8.1.1",
+    "ipfs-api": "^26.1.2",
+    "ipfs-http-client": "^48.1.1",
+    "md5": "^2.3.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-rc.3",
     "vuex": "^3.5.1"

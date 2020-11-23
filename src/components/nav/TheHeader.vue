@@ -5,7 +5,7 @@
       <nav class="nav">
         <ul>
           <li>
-            <router-link to="/"
+            <router-link to="/home"
               ><span><i class="fas fa-home"></i></span>Home</router-link
             >
           </li>
