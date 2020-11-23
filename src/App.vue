@@ -1,12 +1,18 @@
 <template>
-  <user-login></user-login>
+  <!-- <user-login></user-login> -->
+  <the-header></the-header>
+    <router-view></router-view>
 </template>
 
 <script>
-import UserLogin from '@/pages/UserLogin.vue';
+// import UserLogin from '@/pages/UserLogin.vue';
+import TheHeader from '@/components/nav/TheHeader.vue';
+// import HomePage from './pages/HomePage.vue';
 export default {
   components: {
-    UserLogin,
+    // UserLogin,
+    TheHeader,
+    // HomePage,
   },
 };
 </script>
@@ -30,6 +36,12 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
+  // min-height: 100vh;
+  // display: flex;
+}
+
+ul {
+  list-style: none;
 }
 
 img {
@@ -38,7 +50,7 @@ img {
 
 a {
   text-decoration: none;
-  color: currentColor;
+  // color: currentColor;
 }
 
 input {
